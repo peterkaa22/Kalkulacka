@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:kalkulacka"
         mc:Ignorable="d"
-        Title="MainWindow" Height="716" Width="400">
-    <Grid>
+        Title="MainWindow" Height="716" Width="429">
+    <Grid Margin="10,10,12,0">
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
             <RowDefinition Height="100"/>
@@ -25,34 +25,36 @@
             <ColumnDefinition Width="100"/>
         </Grid.ColumnDefinitions>
         <Button Content="%" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="1"  Grid.Column="0" Click="Button_Click" FontSize="24" FontFamily="Goudy Stout" FontWeight="Bold"/>
-        <Button Content="CE" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="1"  Grid.Column="1" FontSize="24" FontFamily="Goudy Stout"/>
-        <Button Content="C" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="1"  Grid.Column="2" FontSize="24" FontFamily="Goudy Stout"/>
+        <Button Content="CE" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="1"  Grid.Column="1" FontSize="24" FontFamily="Goudy Stout" Name="btnce" Click="btnce_Click" />
+        <Button Content="C" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="1"  Grid.Column="2" FontSize="24" FontFamily="Goudy Stout" Name="btnc" Click="btnc_Click"/>
         <Button Content="↩" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="1"  Grid.Column="3" FontSize="24" FontFamily="Goudy Stout"/>
 
         <Button Content="1/x" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="2"  Grid.Column="0" FontSize="24" FontFamily="Goudy Stout"/>
         <Button Content="x²" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="2"  Grid.Column="1" FontSize="24" FontFamily="Goudy Stout"/>
-        <Button Content="" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="2"  Grid.Column="2" FontSize="24" FontFamily="Goudy Stout"/>
-        <Button Content="Button" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="2"  Grid.Column="3" FontSize="24" FontFamily="Goudy Stout"/>
+        <Button Content="√" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="2"  Grid.Column="2" FontSize="50" FontFamily="Goudy Stout"/>
+        <Button Content="÷" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="2"  Grid.Column="3" FontSize="50" FontFamily="Goudy Stout"/>
 
-        <Button Content="7" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="3"  Grid.Column="0" FontSize="24" Background="{x:Null}" FontFamily="Goudy Stout" FontWeight="Bold" />
-        <Button Content="8" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="3"  Grid.Column="1" FontSize="24" Background="White" FontFamily="Goudy Stout"/>
-        <Button Content="9" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="3"  Grid.Column="2" FontSize="24" Background="White" FontFamily="Goudy Stout"/>
-        <Button Content="" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="3"  Grid.Column="3" FontSize="24" FontFamily="Goudy Stout"/>
+        <Button Content="7" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="3"  Grid.Column="0" FontSize="24" Background="{x:Null}" FontFamily="Goudy Stout" FontWeight="Bold"  Name="btn7" Click="btn7_Click" />
+        <Button Content="8" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="3"  Grid.Column="1" FontSize="24" Background="White" FontFamily="Goudy Stout"  Name="btn8" Click="btn8_Click"/>
+        <Button Content="9" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="3"  Grid.Column="2" FontSize="24" Background="White" FontFamily="Goudy Stout"  Name="btn9" Click="btn9_Click"/>
+        <Button Content="×" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="3"  Grid.Column="3" FontSize="50" FontFamily="Goudy Stout"/>
 
-        <Button Content="4" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="4"  Grid.Column="0" FontSize="24" Background="White" FontFamily="Goudy Stout"/>
-        <Button Content="5" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="4"  Grid.Column="1" FontSize="24" Background="White" FontFamily="Goudy Stout"/>
-        <Button Content="6" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="4"  Grid.Column="2" FontSize="24" Background="White" FontFamily="Goudy Stout"/>
-        <Button Content="-" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="4"  Grid.Column="3" FontSize="24" FontFamily="Goudy Stout"/>
+        <Button Content="4" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="4"  Grid.Column="0" FontSize="24" Background="White" FontFamily="Goudy Stout"  Name="btn4" Click="btn4_Click"/>
+        <Button Content="5" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="4"  Grid.Column="1" FontSize="24" Background="White" FontFamily="Goudy Stout"  Name="btn5" Click="btn5_Click"/>
+        <Button Content="6" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="4"  Grid.Column="2" FontSize="24" Background="White" FontFamily="Goudy Stout"  Name="btn6" Click="btn6_Click"/>
+        <Button Content="-" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="4"  Grid.Column="3" FontSize="50" FontFamily="Goudy Stout"/>
 
-        <Button Content="1" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="5"  Grid.Column="0" FontSize="24" Background="White" FontFamily="Goudy Stout"/>
-        <Button Content="2" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="5"  Grid.Column="1" FontSize="24" Background="White" FontFamily="Goudy Stout"/>
-        <Button Content="3" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="5"  Grid.Column="2" FontSize="24" Background="White" FontFamily="Goudy Stout"/>
-        <Button Content="+" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="5"  Grid.Column="3" FontSize="24" FontFamily="Goudy Stout"/>
+        <Button Content="1" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="5"  Grid.Column="0" FontSize="24" Background="White" FontFamily="Goudy Stout" Name="btn1" Click="btn1_Click" />
+        <Button Content="2" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="5"  Grid.Column="1" FontSize="24" Background="White" FontFamily="Goudy Stout"  Name="btn2" Click="btn2_Click"/>
+        <Button Content="3" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="5"  Grid.Column="2" FontSize="24" Background="White" FontFamily="Goudy Stout"  Name="btn3" Click="btn3_Click"/>
+        <Button Content="+" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="5"  Grid.Column="3" FontSize="50" FontFamily="Goudy Stout" Name="btnAdd" Click="btnAdd_Click"/>
 
         <Button Content="+/-" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="6"  Grid.Column="0" FontSize="24" Background="White" FontFamily="Goudy Stout"/>
-        <Button Content="0" Height="100"  VerticalAlignment="Center" Grid.Row="6"  Grid.Column="1"   FontSize="24" Background="White" FontFamily="Goudy Stout"/>
+        <Button Content="0" Height="100"  VerticalAlignment="Center" Grid.Row="6"  Grid.Column="1"   FontSize="24" Background="White" FontFamily="Goudy Stout"  Name="btn0" Click="btn0_Click"/>
         <Button Content="," HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="6"  Grid.Column="2" FontSize="24" Background="White" FontFamily="Goudy Stout"/>
-        <Button Content="" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="6"  Grid.Column="3" FontSize="24" FontFamily="Goudy Stout"/>
+        <Button Content="=" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="6"  Grid.Column="3" FontSize="50" FontFamily="Goudy Stout" Background="DarkSlateBlue"/>
+        <TextBox Grid.ColumnSpan="4" HorizontalAlignment="Left" Height="80" Margin="-20,0,0,0" Name="resultTxtBox"  Text="" VerticalAlignment="Center" Width="410" TextAlignment="Right"/>
+
 
     </Grid>
 </Window>
