@@ -27,10 +27,10 @@
         <Button Content="%" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="1"  Grid.Column="0" Click="Button_Click" FontSize="24" FontFamily="Goudy Stout" FontWeight="Bold"/>
         <Button Content="CE" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="1"  Grid.Column="1" FontSize="24" FontFamily="Goudy Stout" Name="btnce" Click="btnce_Click" />
         <Button Content="C" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="1"  Grid.Column="2" FontSize="24" FontFamily="Goudy Stout" Name="btnc" Click="btnc_Click"/>
-        <Button Content="↩" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="1"  Grid.Column="3" FontSize="24" FontFamily="Goudy Stout"/>
+        <Button Content="↩" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="1"  Grid.Column="3" FontSize="24" FontFamily="Goudy Stout" Name="btnmazani" Click="btnmazani_Click"/>
 
         <Button Content="1/x" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="2"  Grid.Column="0" FontSize="24" FontFamily="Goudy Stout"/>
-        <Button Content="x²" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="2"  Grid.Column="1" FontSize="24" FontFamily="Goudy Stout"/>
+        <Button Content="x²" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="2"  Grid.Column="1" FontSize="24" FontFamily="Goudy Stout" Name="btnsq" Click="btnsq_Click"/>
         <Button Content="√" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="2"  Grid.Column="2" FontSize="50" FontFamily="Goudy Stout"/>
         <Button Content="÷" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="2"  Grid.Column="3" FontSize="50" FontFamily="Goudy Stout"/>
 
@@ -47,9 +47,9 @@
         <Button Content="1" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="5"  Grid.Column="0" FontSize="24" Background="White" FontFamily="Goudy Stout" Name="btn1" Click="btn1_Click" />
         <Button Content="2" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="5"  Grid.Column="1" FontSize="24" Background="White" FontFamily="Goudy Stout"  Name="btn2" Click="btn2_Click"/>
         <Button Content="3" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="5"  Grid.Column="2" FontSize="24" Background="White" FontFamily="Goudy Stout"  Name="btn3" Click="btn3_Click"/>
-        <Button Content="+" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="5"  Grid.Column="3" FontSize="50" FontFamily="Goudy Stout" Name="btnAdd" Click="btnAdd_Click"/>
+        <Button Content="+" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="5"  Grid.Column="3" FontSize="50" FontFamily="Goudy Stout" />
 
-        <Button Content="+/-" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="6"  Grid.Column="0" FontSize="24" Background="White" FontFamily="Goudy Stout"/>
+        <Button Content="+/-" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="6"  Grid.Column="0" FontSize="24" Background="White" FontFamily="Goudy Stout" Name="btnzapor" Click="btnZapor_Click"/>
         <Button Content="0" Height="100"  VerticalAlignment="Center" Grid.Row="6"  Grid.Column="1"   FontSize="24" Background="White" FontFamily="Goudy Stout"  Name="btn0" Click="btn0_Click"/>
         <Button Content="," HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="6"  Grid.Column="2" FontSize="24" Background="White" FontFamily="Goudy Stout"/>
         <Button Content="=" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Grid.Row="6"  Grid.Column="3" FontSize="50" FontFamily="Goudy Stout" Background="DarkSlateBlue"/>

@@ -25,12 +25,13 @@ namespace kalkulacka
             InitializeComponent();
         }
 
+        
+
         private double total1 = 0;
         private double total2 = 0;
-        bool plusButtonClicked = false;
-        bool minusButtonClicked = false;
-        bool multiplyButtonClicked = false;
-        bool divideButtonClicked = false;
+        
+
+
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -88,20 +89,32 @@ namespace kalkulacka
         {
             resultTxtBox.Text = resultTxtBox.Text = "";
         }
-        private void btnplus_Click(object sender, RoutedEventArgs e)
+       
+        private void btnsq_Click(object sender, RoutedEventArgs e)
         {
-            resultTxtBox.Text = resultTxtBox.Text = "";
-        }
-        private void btnAdd_Click(object sender, RoutedEventArgs e)
-        {
-            total1 = total1 += double.Parse(resultTxtBox.Text);
-            resultTxtBox.Text = "";
+            total1 = double.Parse(resultTxtBox.Text) * double.Parse(resultTxtBox.Text);
+            resultTxtBox.Text = total1.ToString();
 
-            plusButtonClicked = true;
-            minusButtonClicked = false;
-            multiplyButtonClicked = false;
-            divideButtonClicked = false;
+           
         }
+        private void btnZapor_Click(object sender, RoutedEventArgs e)
+        {
+            double cislo = double.Parse(resultTxtBox.Text);
+            total1 =  cislo * (-1);
+            resultTxtBox.Text = total1.ToString();
+        }
+        private void btnmazani_Click(object sender, RoutedEventArgs e)
+        {
+                    
+        
+        }
+
+
+
+
+
+
+
     }
 
 }
